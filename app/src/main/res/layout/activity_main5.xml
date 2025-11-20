@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/h">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Achieve Your Haircare Goals!"
+        android:textStyle="bold"
+        android:textColor="#8E44AD"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnAyurveda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ayurveda"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:layout_below="@id/tv"
+        android:backgroundTint="#930D9B"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:id="@+id/btnCosmetic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cosmetic Products"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnAyurveda"
+        android:textSize="20dp"
+        android:backgroundTint="#930D9B"
+        android:layout_margin="10dp" />
+    <Button
+        android:id="@+id/btnf"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:backgroundTint="#930D9B"
+        android:text="Would you like to share before-after image"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnCosmetic"
+        android:layout_margin="10dp" />
+
+</RelativeLayout>

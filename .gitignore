@@ -1,0 +1,32 @@
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Local config (SDK path etc.)
+local.properties
+
+# Log files
+*.log
+
+# Android Studio
+.idea/
+*.iml
+*.iws
+out/
+
+# Keystores (very important: never push signing keys)
+*.jks
+*.keystore
+signing.properties
+
+# OS-specific
+.DS_Store
+
+# Captures / generated
+captures/
+.externalNativeBuild/
+.cxx/
+
+
+

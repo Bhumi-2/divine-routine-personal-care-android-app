@@ -1,0 +1,99 @@
+<!-- activity_ayurveda_skincare_routine.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/w">
+
+    <!-- TextView to display the user's Dosha type -->
+    <TextView
+        android:id="@+id/textViewDosha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Dosha is:"
+        android:fontFamily="cursive"
+        android:textColor="#8E44AD"
+        android:textStyle="bold|italic"
+        android:textSize="40sp"
+        android:paddingBottom="8dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- TextView to display the personalized routine based on Dosha type -->
+    <TextView
+        android:id="@+id/textViewRoutine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Routine: "
+        android:textColor="#8E44AD"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:paddingBottom="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Article Links -->
+    <TextView
+        android:id="@+id/articleLink1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read Article 1"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/holo_blue_dark"
+        android:padding="4dp"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/articleLink2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read Article 2"
+        android:fontFamily="cursive"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:textColor="#03A9F4"
+        android:padding="4dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/articleLink3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read Article 3"
+        android:textSize="25sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:padding="4dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/articleLink4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read Article 4"
+        android:textColor="@android:color/holo_blue_dark"
+        android:padding="4dp"
+        android:textSize="25sp"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Button to navigate to the next Dosha-related screen -->
+    <Button
+        android:id="@+id/buttonNextDosha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Next Recommendations"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:textSize="25sp"
+        android:backgroundTint="#930D9B"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="6dp"/>
+</LinearLayout>
+
+

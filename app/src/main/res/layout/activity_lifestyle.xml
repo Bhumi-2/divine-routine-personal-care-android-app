@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/w">
+
+    <TextView
+        android:id="@+id/textViewLifestyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:text="Tell us more about your lifestyle and skin"
+        android:textColor="#8E44AD"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:text="Select your age group"
+        android:layout_below="@id/textViewLifestyle"
+        android:layout_marginTop="20dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:layout_below="@id/textViewAge"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioAgeUnder20"
+            android:text="Under 20"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/radioAge20To30"
+            android:text="20-30"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/radioAge30To40"
+            android:text="30-40"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/radioAgeOver40"
+            android:text="Over 40"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewClimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your climate"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:layout_below="@id/radioGroupAge"
+        android:layout_marginTop="20dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupClimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:layout_below="@id/textViewClimate"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioClimateHot"
+            android:text="Hot and Humid"
+            android:layout_width="wrap_content"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/radioClimateCold"
+            android:text="Cold and Dry"
+            android:layout_width="wrap_content"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/radioClimateModerate"
+            android:text="Moderate"
+            android:layout_width="wrap_content"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewLifestyleType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Describe your lifestyle"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:layout_below="@id/radioGroupClimate"
+        android:layout_marginTop="20dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupLifestyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLifestyleType"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioLifestyleHectic"
+            android:text="Hectic"
+            android:layout_width="wrap_content"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton android:id="@+id/radioLifestyleBalanced"
+            android:text="Balanced"
+            android:layout_width="wrap_content"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/radioLifestyleRelaxed"
+            android:text="Relaxed"
+            android:layout_width="wrap_content"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:layout_below="@id/radioGroupLifestyle"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#930D9B"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

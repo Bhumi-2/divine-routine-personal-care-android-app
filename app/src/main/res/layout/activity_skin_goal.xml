@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/w">
+
+    <TextView
+        android:id="@+id/textViewGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Your Skincare Goals"
+        android:textSize="30sp"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:textColor="#8E44AD"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox android:id="@+id/checkboxGlowing"
+        android:layout_below="@id/textViewGoal"
+        android:text="Glowing Skin"
+        android:textSize="30sp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"/>
+
+    <CheckBox android:id="@+id/checkboxBlemishFree"
+        android:layout_below="@id/checkboxGlowing"
+        android:text="Blemish-Free Skin"
+        android:layout_marginTop="16dp"
+        android:textSize="30sp"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:layout_width="wrap_content"/>
+
+    <CheckBox android:id="@+id/checkboxTanRemoval"
+        android:layout_below="@id/checkboxBlemishFree"
+        android:text="Tan Removal"
+        android:textSize="30sp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <CheckBox android:id="@+id/checkboxAntiAging"
+        android:layout_below="@id/checkboxTanRemoval"
+        android:text="Anti-Aging"
+        android:layout_marginTop="16dp"
+        android:fontFamily="cursive"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <CheckBox android:id="@+id/checkboxHydratedSkin"
+        android:layout_below="@id/checkboxAntiAging"
+        android:text="Hydrated Skin"
+        android:textSize="30sp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"/>
+
+    <CheckBox android:id="@+id/checkboxMinimizePores"
+        android:layout_below="@id/checkboxHydratedSkin"
+        android:text="Minimize Pores"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_below="@id/checkboxMinimizePores"
+        android:layout_centerHorizontal="true"
+        android:text="Next"
+        android:layout_marginTop="20dp"
+        android:fontFamily="cursive"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:backgroundTint="#930D9B"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+</RelativeLayout>

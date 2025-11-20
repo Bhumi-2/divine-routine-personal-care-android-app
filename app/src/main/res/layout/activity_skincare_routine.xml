@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/w">
+
+
+    <TextView
+        android:id="@+id/tvRoutineTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#8E44AD"
+        android:text="Your Skincare Routine"
+        android:fontFamily="cursive"
+        android:textSize="40sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TableLayout
+            android:id="@+id/tableLayoutRoutine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0"
+            android:fontFamily="cursive"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:padding="8dp" />
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/articleLink11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Article 1"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/articleLink22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Article 2"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/articleLink33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Article 3"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30sp"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/articleLink44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Article 4"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:padding="8dp" />
+
+    <!-- Button for viewing additional recommendations -->
+    <Button
+        android:id="@+id/btnRecommendations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Recommendations"
+        android:textSize="30sp"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:backgroundTint="#930D9B"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

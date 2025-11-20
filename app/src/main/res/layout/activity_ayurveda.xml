@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/w">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Question for Skin Texture -->
+        <TextView
+            android:id="@+id/question_texture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:text="How would you describe your skin's texture?"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupTexture"
+            android:layout_width="match_parent"
+            android:fontFamily="cursive"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioDryRough"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:textStyle="bold|italic"
+                android:text="Dry and rough (Vata)" />
+
+            <RadioButton
+                android:id="@+id/radioOilyInflamed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:textStyle="bold|italic"
+                android:text="Oily and inflamed (Pitta)" />
+
+            <RadioButton
+                android:id="@+id/radioSmoothThick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:textStyle="bold|italic"
+                android:text="Smooth and thick (Kapha)" />
+        </RadioGroup>
+
+        <!-- Question for Skin Temperature -->
+        <TextView
+            android:id="@+id/question_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:text="What is your skin’s typical temperature?"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupTemperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioColdDry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:textStyle="bold|italic"
+                android:text="Cold and dry (Vata)" />
+
+            <RadioButton
+                android:id="@+id/radioWarmSensitive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:textStyle="bold|italic"
+                android:text="Warm and sensitive (Pitta)" />
+
+            <RadioButton
+                android:id="@+id/radioCoolMoist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:textStyle="bold|italic"
+                android:text="Cool and moist (Kapha)" />
+        </RadioGroup>
+
+        <!-- Question for Climate Change Reaction -->
+        <TextView
+            android:id="@+id/question_climate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How does your skin react to climate changes?"
+            android:textSize="18sp"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupClimate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioDryFlaky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:textStyle="bold|italic"
+                android:text="Becomes dry and flaky in cold (Vata)" />
+
+            <RadioButton
+                android:id="@+id/radioBreaksOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:textStyle="bold|italic"
+                android:text="Breaks out in heat or humidity (Pitta)" />
+
+            <RadioButton
+                android:id="@+id/radioOilyCongested"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:textStyle="bold|italic"
+                android:text="Oily or congested in humidity (Kapha)" />
+        </RadioGroup>
+
+        <!-- Question for Skin Sensitivity -->
+        <TextView
+            android:id="@+id/question_sensitivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:text="Do you notice your skin becoming more sensitive or irritated?"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupSensitivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioOften"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Often (Pitta)"
+                android:textStyle="bold|italic"
+                android:fontFamily="cursive"
+                />
+
+            <RadioButton
+                android:id="@+id/radioRarely"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rarely (Vata/Kapha)"
+                android:fontFamily="cursive"
+                android:textStyle="bold|italic" />
+        </RadioGroup>
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_marginTop="16dp"
+            android:fontFamily="cursive"
+            android:backgroundTint="#930D9B"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/w">
+
+    <TextView
+        android:id="@+id/textViewSkinType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Your Skin Type"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:textColor="#8E44AD"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSkinType"
+        android:layout_below="@id/textViewSkinType"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:fontFamily="cursive"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioDry"
+            android:text="Dry"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:textSize="30sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/radioOily"
+            android:text="Oily"
+            android:textSize="30sp"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <RadioButton
+            android:id="@+id/radioNormal"
+            android:text="Normal"
+            android:textSize="30sp"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <RadioButton
+            android:id="@+id/radioCombination"
+            android:text="Combination"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"/>
+        <RadioButton android:id="@+id/radioSensitive"
+            android:text="Sensitive"
+            android:fontFamily="cursive"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_below="@id/radioGroupSkinType"
+        android:layout_centerHorizontal="true"
+        android:text="Next"
+        android:layout_marginTop="20dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:backgroundTint="#930D9B"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+</RelativeLayout>

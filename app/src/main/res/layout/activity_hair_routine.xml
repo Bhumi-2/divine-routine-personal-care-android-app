@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/w"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="6dp"
+        android:text="@string/hair_header"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Q1: Hair Type -->
+    <TextView
+        android:id="@+id/tvHairType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHeader"
+        android:layout_marginTop="6dp"
+        android:text="@string/hair_type_q"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <RadioGroup
+        android:id="@+id/rgHairType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHairType"
+        android:layout_marginTop="6dp">
+
+        <RadioButton
+            android:id="@+id/rbHairTypeCurly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hair_curly"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rbHairTypeStraight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hair_straight"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rbHairTypeWavy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hair_wavy"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rbHairTypeCoily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hair_coily"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <!-- Q2: Hair Condition -->
+    <TextView
+        android:id="@+id/tvHairCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rgHairType"
+        android:layout_marginTop="8dp"
+        android:text="@string/hair_condition_q"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <RadioGroup
+        android:id="@+id/rgHairCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHairCondition"
+        android:layout_marginTop="6dp">
+
+        <RadioButton
+            android:id="@+id/rbHairConditionDry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cond_dry"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rbHairConditionOily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cond_oily"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rbHairConditionNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cond_normal"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rbHairConditionSensitive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cond_sensitive"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <!-- Q3: Allergy -->
+    <TextView
+        android:id="@+id/tvAllergy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rgHairCondition"
+        android:layout_marginTop="8dp"
+        android:text="@string/allergy_q"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <CheckBox
+        android:id="@+id/cbAllergy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAllergy"
+        android:layout_marginTop="4dp"
+        android:text="@string/yes"
+        android:textSize="15sp" />
+
+    <!-- Mic button: min 48x48dp touch target -->
+    <ImageButton
+        android:id="@+id/btnMic"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/cbAllergy"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/voice_input"
+        android:src="@android:drawable/ic_btn_speak_now"
+        android:padding="8dp" />  <!-- padding helps hit area; size already 48dp -->
+
+    <!-- Allergy EditText aligned to start of mic -->
+    <EditText
+        android:id="@+id/etAllergyDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cbAllergy"
+        android:layout_toStartOf="@id/btnMic"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/allergy_hint"
+        android:visibility="gone"
+        android:inputType="textCapWords|textNoSuggestions"
+        android:importantForAutofill="no"
+        android:textStyle="bold" />
+
+    <!-- Next -->
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etAllergyDetails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/next"
+        android:textStyle="bold"
+        android:backgroundTint="#930D9B" />
+
+</RelativeLayout>

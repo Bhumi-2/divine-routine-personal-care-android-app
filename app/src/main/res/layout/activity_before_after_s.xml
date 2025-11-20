@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Before_after_s"
+    android:background="@drawable/w">
+
+    <TextView
+        android:id="@+id/textViewPrompt"
+        android:textColor="#8E44AD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:textSize="35sp"
+        android:text="Please click on the buttons below to capture images"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imageViewBefore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPrompt"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Before photo"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/imageViewAfter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewBefore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+        android:contentDescription="After photo"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/buttonTakeBefore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture Before Photo"
+        android:layout_below="@id/imageViewAfter"
+        android:layout_marginTop="20dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:textSize="25sp"
+        android:backgroundTint="#930D9B"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"/>
+
+    <Button
+        android:id="@+id/buttonTakeAfter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#930D9B"
+        android:textStyle="bold|italic"
+        android:text="Capture After Photo"
+        android:textSize="25sp"
+        android:layout_below="@id/buttonTakeBefore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"/>
+</RelativeLayout>

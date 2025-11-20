@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@drawable/w"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvAyurvedaHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please answer the following questions for Ayurveda recommendations:"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvDoshaType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your primary Dosha type?"
+        android:textStyle="bold|italic"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/tvAyurvedaHeader"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgDoshaType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@id/tvDoshaType"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/rbDoshaTypeVata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Vata" />
+
+        <RadioButton
+            android:id="@+id/rbDoshaTypePitta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Pitta" />
+
+        <RadioButton
+            android:id="@+id/rbDoshaTypeKapha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Kapha" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvHairTexture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Describe your hair texture"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        android:layout_below="@id/rgDoshaType"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgHairTexture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@id/tvHairTexture"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/rbHairTextureFine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Fine" />
+
+        <RadioButton
+            android:id="@+id/rbHairTextureMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Medium" />
+
+        <RadioButton
+            android:id="@+id/rbHairTextureCoarse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Coarse" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvAyurvedaAllergy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you allergic to any herbal ingredient?"
+        android:textStyle="bold|italic"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/rgHairTexture"
+        android:layout_marginTop="16dp"/>
+
+    <CheckBox
+        android:id="@+id/cbAyurvedaAllergy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:textColor="@color/black"
+        android:layout_below="@id/tvAyurvedaAllergy"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/etAllergyDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cbAyurvedaAllergy"
+        android:hint="Specify the herbal ingredient"
+        android:textColor="@color/Purple"
+        android:layout_margin="18dp"/>
+
+    <Button
+        android:id="@+id/btnAyurvedaNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:backgroundTint="#930D9B"
+        android:layout_below="@id/etAllergyDetails"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

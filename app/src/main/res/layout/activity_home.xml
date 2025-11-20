@@ -1,0 +1,38 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/w">
+
+    <Button
+        android:id="@+id/btn_skin_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:backgroundTint="#930D9B"
+        android:text="Skin Type Routine" />
+
+    <Button
+        android:id="@+id/btn_hair_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:backgroundTint="#930D9B"
+        android:text="Hair Type Routine" />
+
+    <Button
+        android:id="@+id/btn_pr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:backgroundTint="#930D9B"
+        android:text="Product recommendation" />
+</LinearLayout>

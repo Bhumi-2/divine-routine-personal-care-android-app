@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".RecommendationActivity"
+    android:background="@drawable/w">
+
+    <TextView
+        android:id="@+id/recommendationTitle"
+        android:textColor="#8E44AD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:text="Your Skincare Recommendations"
+        android:textSize="30sp"
+        android:paddingBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:id="@+id/recommendationList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"/>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/noRecommendationsMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No recommendations available."
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:textColor="#2C2B2B"
+        android:visibility="gone"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <!-- Button to go back to HomeActivity -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        android:textColor="@color/white"
+        android:fontFamily="cursive"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:backgroundTint="#930D9B"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Share button to share recommendations -->
+    <Button
+        android:id="@+id/shareButtonn"
+        android:layout_width="match_parent"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:backgroundTint="#930D9B"
+        android:layout_height="wrap_content"
+        android:text="Share Recommendations"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
+
+
+
+
+

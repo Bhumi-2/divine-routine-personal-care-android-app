@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:padding="16dp"
+    android:background="@drawable/w">
+
+    <TextView
+        android:id="@+id/tvCosmeticRecommendationHeader"
+        android:textColor="#8E44AD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:text="Recommended Cosmetic Products"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="16dp" />
+
+    <ListView
+        android:id="@+id/lvCosmeticProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCosmeticRecommendationHeader"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: Rs. 0"
+        android:layout_marginTop="600dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:paddingTop="16dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCustomRoutine"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#930D9B"
+        android:textStyle="bold"
+        android:text="Click to get customized routine"
+        android:layout_below="@id/tvTotalPrice"/>
+</RelativeLayout>

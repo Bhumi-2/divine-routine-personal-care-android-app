@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/w">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ayurvedic Skin Care Routine"
+        android:textColor="#8E44AD"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/recommendationListt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share My Routine"
+        android:layout_gravity="center"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:backgroundTint="#930D9B"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/backButtonn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:backgroundTint="#930D9B"
+        android:layout_gravity="center" />
+</LinearLayout>
+

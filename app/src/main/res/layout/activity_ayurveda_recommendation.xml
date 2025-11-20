@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@drawable/w"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvAyurvedaRecommendationHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recommended Ayurveda Products"
+        android:textColor="#8E44AD"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="16dp" />
+
+    <ListView
+        android:id="@+id/lvAyurvedaProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAyurvedaRecommendationHeader"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: Rs. 0"
+        android:layout_marginTop="600dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="16dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCustomRoutine_a"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:backgroundTint="#930D9B"
+        android:text="Click to get customized routine"
+        android:layout_below="@id/tvTotalPrice"/>
+</RelativeLayout>

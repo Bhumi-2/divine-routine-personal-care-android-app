@@ -1,0 +1,20 @@
+
+<resources>
+    <string name="app_name">project</string>
+    <string name="hair_header">Please answer the following questions about your hair care routine:</string>
+    <string name="hair_type_q">What is your hair type?</string>
+    <string name="hair_condition_q">How would you describe your hair condition?</string>
+    <string name="hair_curly">Curly</string>
+    <string name="hair_straight">Straight</string>
+    <string name="hair_wavy">Wavy</string>
+    <string name="hair_coily">Coily</string>
+    <string name="cond_dry">Dry</string>
+    <string name="cond_oily">Oily</string>
+    <string name="cond_normal">Normal</string>
+    <string name="cond_sensitive">Sensitive</string>
+    <string name="allergy_q">Are you allergic to any chemical?</string>
+    <string name="yes">Yes</string>
+    <string name="allergy_hint">Specify the chemical (e.g., fragrance, SLS)</string>
+    <string name="voice_input">Voice input</string>
+    <string name="next">Next</string>
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/w">
+
+    <TextView
+        android:id="@+id/question_concerns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What are your main skincare concerns?"
+        android:textSize="25sp"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:layout_marginBottom="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupConcerns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioDryness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:text="Dryness and roughness (Vata)" />
+
+        <RadioButton
+            android:id="@+id/radioRedness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:text="Redness and sensitivity (Pitta)" />
+
+        <RadioButton
+            android:id="@+id/radioCongestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:text="Congestion and oiliness (Kapha)" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/question_goals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:text="What are your goals for your skincare routine?"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupGoals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioHydration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:text="Hydration and nourishment (Vata)" />
+
+        <RadioButton
+            android:id="@+id/radioSoothing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:text="Soothing and balancing (Pitta)" />
+
+        <RadioButton
+            android:id="@+id/radioPurifying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:text="Purifying and detoxifying (Kapha)" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/question_natural_remedies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Do you prefer natural and herbal remedies in your skincare routine?"
+
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupNaturalRemedies"
+        android:layout_width="match_parent"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/radioNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:text="No" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonNext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="25sp"
+        android:fontFamily="cursive"
+        android:backgroundTint="#930D9B"
+        android:textStyle="bold|italic"/>
+
+</LinearLayout>

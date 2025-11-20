@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/w">
+
+    <TextView
+        android:id="@+id/question_energy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How would you describe your overall energy levels?"
+        android:textSize="18sp"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:layout_marginBottom="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupEnergy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioErratic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:text="Erratic and variable (Vata)" />
+
+        <RadioButton
+            android:id="@+id/radioHighIntense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:text="High and intense (Pitta)" />
+
+        <RadioButton
+            android:id="@+id/radioSteadySlow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:text="Steady and slow (Kapha)" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/question_diet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your typical diet like?"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupDiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioDryLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:text="Dry, light, and airy (Vata)" />
+
+        <RadioButton
+            android:id="@+id/radioSpicyOily"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spicy and oily (Pitta)" />
+
+        <RadioButton
+            android:id="@+id/radioHeavyRich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:text="Heavy and rich (Kapha)" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/question_stress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How do you manage stress?"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupStress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioVariable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:text="Variable—sometimes overwhelmed (Vata)" />
+
+        <RadioButton
+            android:id="@+id/radioIntense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:text="Intense and passionate (Pitta)" />
+
+        <RadioButton
+            android:id="@+id/radioCalm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textStyle="bold|italic"
+            android:text="Calm and collected (Kapha)" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonNext1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:backgroundTint="#930D9B"
+        android:textStyle="bold|italic"
+        android:text="Next" />
+</LinearLayout>
