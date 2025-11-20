@@ -55,7 +55,7 @@ divine-routine-personal-care-android-app/
 
 ---
 
-## ▶️ Running the App
+## Running the App
 
 1. Open Android Studio  
 2. Select **Open Project**  
